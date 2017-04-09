@@ -14,19 +14,19 @@
 ActiveRecord::Schema.define(version: 20170409161005) do
 
   create_table "instances", force: :cascade do |t|
-    t.string   "ip"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string   "ip",         limit: 255
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
   end
 
   create_table "metrics", force: :cascade do |t|
-    t.string   "ip"
-    t.decimal  "rtt",          precision: 10, scale: 3
-    t.integer  "transmitted"
-    t.integer  "received"
+    t.string   "ip",           limit: 255
+    t.decimal  "rtt",                      precision: 10, scale: 3
+    t.integer  "transmitted",  limit: 4
+    t.integer  "received",     limit: 4
     t.datetime "collected_at"
-    t.datetime "created_at",                            null: false
-    t.datetime "updated_at",                            null: false
+    t.datetime "created_at",                                        null: false
+    t.datetime "updated_at",                                        null: false
   end
 
 end

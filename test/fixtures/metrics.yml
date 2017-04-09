@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ip: MyString
+  rtt: 1
+  lost: 1
+  collected_at: 2017-04-09 19:10:05
+
+two:
+  ip: MyString
+  rtt: 1
+  lost: 1
+  collected_at: 2017-04-09 19:10:05
